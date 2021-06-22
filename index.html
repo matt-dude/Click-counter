@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+</div>
+
+<center>
+
+ <h1>CLICKER BUTTON COUNTER</h1>
+
+
+ <style>
+ body {
+   background-image: url('https://www.htmlcsscolor.com/preview/gallery/80FFFF.png');}
+ </style>
+
+
+<img src="https://articulate-heroes.s3.amazonaws.com/4812.clickhere2874qvx.png"
+alt="Mayonnaise, I am sorry jett/ anyone using a screenreader, why are you here? just to suffer to my wraith, of mayonnaise, mayonnaise is very delicous!"
+height="300"
+width="300"/>
+
+<br>
+
+<h2>Click the button as much as you like.</h2>
+
+<h4>Your score will be stored on your browser</h2>
+
+  <script>
+  function clickCounter() {
+    if (typeof(Storage) !== "undefined") {
+      if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+      } else {
+        localStorage.clickcount = 1;
+      }
+      document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    }
+  }
+  </script>
+
+<style>
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+</style>
+
+  <p><button style="transform: scale(1.7);" onclick="clickCounter()" type="button5">Click me!</button></p>
+  <div id="result"></div>
+  <h4>Click the button to see the counter increase.</h4>
+
+
+
+<center>
+
+</body>
+</html>
